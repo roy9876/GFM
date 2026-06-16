@@ -1,24 +1,27 @@
 # GFM
 Github Flavored Markdown reference
 
-- [External Cheatsheets]{external-cheatsheets}
-- [Horizontal Rule](horizontal-rule)
-- [Headers]{#headers}
+- [External Cheatsheets](#external-cheatsheets)
+- [Horizontal Rule](#horizontal-rule)
+- [Headers](#headers)
 - [Hide a line](#hide-a-line)
-- [Display Code as plain text]{display-code-as-plain-text}
-- [Show Keyboard style keys]{show-keyboard-style-keys}
-- [Pre-formatted text]{pre-formatted--text}
-- [Blockquotes]{blockquotes}
+- [Display Code as plain text](#display-code-as-plain-text)
+- [Show Keyboard style keys](#show-keyboard-style-keys)
+- [Pre-formatted text](#pre-formatted--text)
+- [Blockquotes](#blockquotes)
 
-- [Text Formats](text-formats)
-  - [Normal](normal)
-  - [Bold](bold)
-  - [Italic](italic)
-  - [Bold and Italic](bold-and-italic)
-  - [Underlined](underlined)
-  - [Strike-through](strike-through)
-  - [Blockquotes](blockquotes)
-  - [Monospaced](monospaced)
+- [Text Formats](#text-formats)
+  - [Normal](#normal)
+  - [Bold](#bold)
+  - [Italic](#italic)
+  - [Bold and Italic](#bold-and-italic)
+  - [Underlined](#underlined)
+  - [Strike-through](#strike-through)
+
+- [Tables](#tables)
+- [Emojis](#emojis-)
+- [Unordered Lists](#unordered-list)
+- [Ordered Lists](#ordered-list)
 
 ***
 
@@ -56,7 +59,14 @@ https://gist.github.com/stevenyap/7038119
 [Github-adam-p](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
 https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet
 
+[Github-rxaviers-emojis](https://gist.github.com/rxaviers/7360908 "markdown emojis")
+https://gist.github.com/rxaviers/7360908
+
 https://towardsdatascience.com/python-done-the-r-markdown-way-d03bec4b96b/
+
+convert excel to markdown
+https://tableconvert.com/
+
 
 
 ### <ins>Common Used Markdowns</ins>
@@ -193,27 +203,27 @@ or `<kbd>Write anything</kbd> + <kbd>you want</kbd>` for <kbd>Write anything</kb
 
 ### Text Formats
 
-#### <strong> Bold. </strong>
+#### <strong> Bold </strong>
 For Keyboard shortcut just Press <kbd>Ctrl</kbd> + <kbd>B</kbd> (or <kbd>Cmd+B</kbd> in Mac) or
 ```
-**Bold.**
-__Bold.__
-<strong>Bold.</strong>
+**Bold**
+__Bold__
+<strong>Bold</strong>
 ```
 
-#### <em>Italic</em>
+#### <em>Italic.</em>
 For Keyboard shortcut just Press <kbd>Ctrl</kbd> plus <kbd>i</kbd> (or <kbd>Cmd+I</kbd> in Mac) or
 ```
-*Italic*
-_Italic_
-<em>Italic</em>
+*Italic.*
+_Italic._
+<em>Italic.</em>
 ```
 
-#### <strong><em> Bold AND Italic.</em></strong>
+#### <strong><em> Bold AND Italic</em></strong>
 ```
-**_Bold AND Italic._**
-***Bold AND Italic.***
-<strong><em>Bold AND Italic.</em></strong>
+**_Bold AND Italic_**
+***Bold AND Italic***
+<strong><em>Bold AND Italic</em></strong>
 ```
 
 #### <ins>Underlined</ins>
@@ -225,6 +235,132 @@ _Italic_
 ```
 ~~Strike-through.~~
 ```
+
+
+#### Emojis :cool:
+```
+:smiley:
+```
+:smiley:
+
+#### Tables
+```
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+```
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+```
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+
+#### Unordered List
+```
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ul>
+```
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ul>
+
+
+```
+- First level
+  - Second level
+    - Third level
+      - Fourth level
++ First level
+  + Second level
+* First level
+  * Second level
+ ```
+
+- First level
+  - Second level
+    - Third level
+      - Fourth level
++ First level
+  + Second level
+* First level
+  * Second level
+
+
+For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>8</kbd> (or <kbd>Cmd+Shift+8</kbd> in Mac) or
+
+
+
+#### Ordered List
+Each ordered level is 2 tabs (2x2=4 spaces) away
+
+```
+1. One
+2. Two
+3. Three
+```
+1. One
+2. Two
+3. Three
+
+```
+1. First ordered level
+    1. Second ordered level
+        - Third unordered level
+            - Fourth unordered level
+2. First ordered level
+    1. Second ordered level 1
+    2. Second ordered level 2
+3. First ordered level
+    - Second unordered level
+        1. Third ordered level 1
+        2. Third ordered level 2
+        3. Third ordered level 3
+            1. Fourth ordered level      
+```
+1. First ordered level
+    1. Second ordered level
+        - Third unordered level
+            - Fourth unordered level
+2. First ordered level
+    1. Second ordered level 1
+    2. Second ordered level 2
+3. First ordered level
+    - Second unordered level
+        1. Third ordered level 1
+        2. Third ordered level 2
+        3. Third ordered level 3
+            1. Fourth ordered level   
+
+For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd> (or <kbd>Cmd+Shift+7</kbd> in Mac) or
 
 
 
