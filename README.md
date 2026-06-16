@@ -6,22 +6,23 @@ Github Flavored Markdown reference
 - [Headers](#headers)
 - [Hide a line](#hide-a-line)
 - [Display Code as plain text](#display-code-as-plain-text)
-- [Show Keyboard style keys](#show-keyboard-style-keys)
-- [Pre-formatted text](#pre-formatted--text)
+- [Show Keyboard style keys or buttons](#show-keyboard-style-keys-or-buttons)
+- [Pre-formatted text](#pre-formatted-text)
+- [Multi-line text](#multi-line-text)
 - [Blockquotes](#blockquotes)
 
 - [Text Formats](#text-formats)
-  - [Normal](#normal)
   - [Bold](#bold)
   - [Italic](#italic)
-  - [Bold and Italic](#bold-and-italic)
+  - [Bold and Italics](#bold-and-italic)
   - [Underlined](#underlined)
   - [Strike-through](#strike-through)
 
+- [Emojis](#emojis)
 - [Tables](#tables)
-- [Emojis](#emojis-)
 - [Unordered Lists](#unordered-list)
 - [Ordered Lists](#ordered-list)
+- [Alerts](#alerts)
 
 ***
 
@@ -149,22 +150,36 @@ Press <kbd>Ctrl</kbd> + <kbd>E</kbd> (or <kbd>Cmd+E</kbd> in Mac) which basicall
 ``#### Heading 4`` (twice, in the front and at the back)
 
 
-#### Show Keyboard style keys
+### Show Keyboard style keys or buttons
 
 ```
 <kbd>Space</kbd>
 ```
 for <kbd>Space</kbd>
 
-or `<kbd>Write anything</kbd> + <kbd>you want</kbd>` for <kbd>Write anything</kbd> + <kbd>you want</kbd>
+or `<kbd>Write anything</kbd> + <kbd>you want</kbd>` 
 
-#### <pre>Pre-formatted      text</pre>
+for <kbd>Write anything</kbd> + <kbd>you want</kbd> including <kbd>[button links](https://github.com/lifeparticle/Markdown-Cheatsheet/blob/main/README.md#buttons)</kbd>
+
+### <pre>Pre-formatted      text</pre>
 ```
 <pre>Pre-formatted      text </pre>
 ```
+### Multi-line text
+```
+Use the\
+backslash\
+display multi-line preformatted text\
+like this.
+```
+Use the\
+backslash\
+display multi-line preformatted text\
+like this.
 
 
-#### Blockquotes
+
+### Blockquotes
 ```
 > Simple Blockquote
 ```
@@ -203,8 +218,8 @@ or `<kbd>Write anything</kbd> + <kbd>you want</kbd>` for <kbd>Write anything</kb
 
 ### Text Formats
 
-#### <strong> Bold </strong>
-For Keyboard shortcut just Press <kbd>Ctrl</kbd> + <kbd>B</kbd> (or <kbd>Cmd+B</kbd> in Mac) or
+#### <strong>Bold</strong>
+For Keyboard shortcut just Press <kbd>Ctrl</kbd> + <kbd>B</kbd> (or <kbd>Cmd+B</kbd> in Mac)
 ```
 **Bold**
 __Bold__
@@ -212,14 +227,14 @@ __Bold__
 ```
 
 #### <em>Italic.</em>
-For Keyboard shortcut just Press <kbd>Ctrl</kbd> plus <kbd>i</kbd> (or <kbd>Cmd+I</kbd> in Mac) or
+For Keyboard shortcut just Press <kbd>Ctrl</kbd> plus <kbd>i</kbd> (or <kbd>Cmd+I</kbd> in Mac)
 ```
 *Italic.*
 _Italic._
 <em>Italic.</em>
 ```
 
-#### <strong><em> Bold AND Italic</em></strong>
+#### <strong><em>Bold AND Italic</em></strong>
 ```
 **_Bold AND Italic_**
 ***Bold AND Italic***
@@ -237,13 +252,13 @@ _Italic._
 ```
 
 
-#### Emojis :cool:
+### Emojis :cool:
 ```
 :smiley:
 ```
 :smiley:
 
-#### Tables
+### Tables
 ```
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -277,7 +292,7 @@ Markdown | Less | Pretty
 1 | 2 | 3
 
 
-#### Unordered List
+### Unordered List
 ```
 <ul>
 <li>First item</li>
@@ -315,11 +330,11 @@ Markdown | Less | Pretty
   * Second level
 
 
-For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>8</kbd> (or <kbd>Cmd+Shift+8</kbd> in Mac) or
+For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>8</kbd> (or <kbd>Cmd+Shift+8</kbd> in Mac)
 
 
 
-#### Ordered List
+### Ordered List
 Each ordered level is 2 tabs (2x2=4 spaces) away
 
 ```
@@ -360,7 +375,33 @@ Each ordered level is 2 tabs (2x2=4 spaces) away
         3. Third ordered level 3
             1. Fourth ordered level   
 
-For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd> (or <kbd>Cmd+Shift+7</kbd> in Mac) or
+For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd> (or <kbd>Cmd+Shift+7</kbd> in Mac)
+
+### Alerts
+
+> [!NOTE]
+> NOTES are blue. Essential details that users should not overlook, even when browsing quickly.
+
+<br>
+
+> [!TIP]
+> Tips are green. Additional advice to aid users in achieving better outcomes.
+
+<br>
+
+> [!IMPORTANT]
+> Important are purple. Vital information required for users to attain success.
+
+<br>
+
+> [!WARNING]
+> Warnings are yello. Urgent content that requires immediate user focus due to possible risks.
+
+<br>
+
+> [!CAUTION]
+> Caution are red. Possible negative outcomes resulting from an action.
+
 
 
 
