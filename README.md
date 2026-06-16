@@ -9,6 +9,9 @@ Github Flavored Markdown reference
   - [Reference links](#reference-links)
   - [Heading & Section or Table of Contents Links](#heading--section-table-of-contents-links)
   - [Custom Anchors or links for non-headings](#custom-anchors-or-links-for-non-headings)
+- [Images](#images)
+  - [Inline image](#inline-image)
+  - [Reference style Image Link](#reference-style-image-link)
 - [Headers](#headers)
 - [Hide a line](#hide-a-line)
 - [Collapsible lines](#collapsible-lines)
@@ -38,10 +41,10 @@ Github Flavored Markdown reference
 ### External Cheatsheets
 
 
-The [Official Github text link]
+The [Official Github Flavored Markdown spec text link]
 https://github.github.com/gfm/
 
-[Official Github text link]: https://github.github.com/gfm/
+[Official Github Flavored Markdown spec text link]: https://github.github.com/gfm/
 
 [Github Docs using numbered reference style link definition][1]
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
@@ -90,6 +93,10 @@ ___
 ```
 
 ### Links
+
+For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd> (or <kbd>Cmd+Shift+k</kbd> in Mac)
+
+
 #### [Inline Links](https://github.com/roy9876/GFM/)
 Inline Links in the header are done like this using brackets
 ```
@@ -188,6 +195,26 @@ These are anchor links to the second & third items from the unordered list secti
 [Jump to the HTML paragraph](#my-unique-id)
 
 <br>
+
+### Images
+#### Inline Image
+```
+![270 Park Ave dark](270parkave-night-612x458.jpg "270 Park Ave at night")
+```
+![270 Park Ave dark](270parkave-night-612x458.jpg "270 Park Ave at night")
+
+#### Reference style Image Link
+```
+![270 Park Ave westward][image-id]
+on it's own line elsewhere:
+[image-id]: 270parkave-westward-1440x810.jpg "270 Park Ave looking west"
+```
+![270 Park Ave westward][image-id]
+on it's own line elsewhere:
+[image-id]: 270parkave-westward-1440x810.jpg "270 Park Ave looking west"
+
+NOTE: that Github cannot render .avif files
+
 
 ### Headers
 # Heading 1
@@ -298,6 +325,10 @@ for <kbd>Write anything</kbd> + <kbd>you want</kbd> including <kbd>[button links
 ```
 <pre>Pre-formatted      text </pre>
 ```
+You can also Indent the entire block of text by at least four <kbd>Spaces</kbd> (or one tab)
+
+    like this
+  
 ### Multi-line text
 ```
 Use the\
@@ -346,6 +377,8 @@ like this.
 > **Bold** <strong><em>and</em></strong> *Italic* blockquotes
 ```
 > **Bold** <strong><em>and</em></strong> *Italic* blockquotes
+
+For Keyboard shortcut Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>.</kbd> (or <kbd>Cmd+Shift+.</kbd> in Mac)
 
 
 
@@ -450,7 +483,7 @@ Markdown | Less | Pretty
 <li>Fourth item</li>
 </ul>
 
-<sub><sup> See [Links](#links) section above</sub></sup>
+<sub><sup> See [Links](#links) and [Anchors](#custom-anchors-or-links-for-non-headings) section above</sub></sup>
 
 ```
 - First level (bullet point)
