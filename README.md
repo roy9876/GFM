@@ -24,7 +24,7 @@ Github Flavored Markdown reference
   - [Bold and Italics](#bold-and-italic)
   - [Underlined](#underlined)
   - [Strike-through](#strike-through)
-  - [Highlight](#highlight)
+  - [Highlight](#highlight) DOES NOT WORK
 
 - [Emojis](#emojis)
 - [Tables](#tables)
@@ -388,6 +388,8 @@ _Italic._
 ```
 ==Highlight==
 ```
+_?THIS MIGHT NOT WORK?_ 
+
 ==Highlight==
 
 ### Emojis :cool:
@@ -395,6 +397,8 @@ _Italic._
 :smiley:
 ```
 :smiley:
+
+Emojis might display differently (or not at all) on different browsers.
 
 ### Tables
 ```
@@ -434,18 +438,19 @@ Markdown | Less | Pretty
 ```
 <ul>
 <li>First item</li>
-<li><a id="custom-ul-target2"></a>Second item (un-indicated anchor link)</li>
-<li><a id="custom-ul-target3">Third item (indicated or underlined anchor link)</a></li>
+<li><a id="custom-ul-target2"></a>Second item (un-indicated anchor link) used in Links section</li>
+<li><a id="custom-ul-target3">Third item (indicated or underlined anchor link) used in Links section</a></li>
 <li>Fourth item</li>
 </ul>
 ```
 <ul>
 <li>First item</li>
-<li><a id="custom-ul-target2"></a>Second item (un-indicated anchor link)</li>
-<li><a id="custom-ul-target3">Third item (indicated or underlined anchor link)</a></li>
+<li><a id="custom-ul-target2"></a>Second item (un-indicated anchor link) used in Links section</li>
+<li><a id="custom-ul-target3">Third item (indicated or underlined anchor link) used in Links section</a></li>
 <li>Fourth item</li>
 </ul>
 
+<sub><sup> See [Links](#links) section above</sub></sup>
 
 ```
 - First level (bullet point)
